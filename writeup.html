@@ -204,7 +204,7 @@ print(predicted)</code></pre>
 pml_write_files = function(x){
   n = length(x)
   for(i in 1:n){
-    filename = paste0(&quot;./problem_id_&quot;, i, &quot;.txt&quot;)
+    filename = paste0(&quot;./prediction/problem_id_&quot;, i, &quot;.txt&quot;)
     write.table(x[i], file = filename, quote = FALSE, row.names = FALSE, col.names = FALSE)
   }
 }
